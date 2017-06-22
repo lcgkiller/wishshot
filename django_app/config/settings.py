@@ -40,6 +40,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# Custom User
+AUTH_USER_MODEL = 'member.User'
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -51,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'post',
+    'member',
 ]
 
 MIDDLEWARE = [
